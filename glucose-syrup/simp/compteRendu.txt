@@ -1,0 +1,23 @@
+Exercice 2 :
+
+Question 1 :
+Le nombre de variables propositionnelles utilisées est obtenue en prenant pour j la valeur nj, x = ne et y = ne, soit :
+nj*ne²+ne²+ne+1
+
+
+
+
+Exercice 3 :
+
+Question 2 :
+1- La contrainte C1 peut être traduite de la manière suivante :
+Pour tout x appartenant à [0,ne], pour tout j appartenant à [0,nj]
+	La somme pour tous les y appartenant à [0,ne]\{x} du codage Mj,x,y doit être inférieure ou égale à 1
+3-Le nombre de contraintes générées pour 3 équipes sur 4 jours est de 12.
+En effet, il n'y a que 3 combinaisons possibles pour les paires d'équipes : (0,1) ; (0,2) ; (1,2)
+et cela pour 4 jours différents, ce qui fait bien 12.
+4-La contrainte C2 peut se traduire de cette façon :
+Pour tout x appartenant à [0,ne], Pour tout y appartenant à [0,ne]\{x} :
+	La somme pour tous les j appartenant à [0,nj]  du codage Mj,x,y  vaut 1
+	Et la somme pour tous les j appartenant à [0,nj]  du codage Mj,y,x  vaut 1
+

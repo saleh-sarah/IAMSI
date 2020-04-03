@@ -1,0 +1,46 @@
+Exercice 1 :
+1- même arbre qu'en TD
+2-reset permet de mettre le fait initial dans la base, et de réinitialiser les faits
+  run donne l'arbre actualisé
+  Pour retirer un fait, on fait (retract n°du_fait)
+  On peut aussi modifier un fait (modify n°du_fait (attribut_en_question nouvelle_valeur))
+8- Le résultat obtenu n'est pas correct car bob n'est pas enfant unique.  
+En effet, la règle enfant_unique se déclence avant qu'on ait pu trouver que bob et claire sont frères et soeurs. Pour remédier à ce problème, nous allons devoir modifier la saliance (importance) de cette règle -> question 9.
+9- On peut donc en conclure que la saliance joue un rôle important. Faire attention 
+Très bas = pas prioritaire
+10-On pourrait rétracter le fait enfant_unique dans un fait naissance -> VOIR TD
+
+Exercice 2 :
+FIRE    1 start: f-0
+FIRE    2 ask-a-question: f-8
+sweet
+FIRE    3 ask-a-question: f-7
+white
+FIRE    4 ask-a-question: f-6
+light
+FIRE    5 ask-a-question: f-5
+strong
+FIRE    6 ask-a-question: f-3
+no
+FIRE    7 ask-a-question: f-1
+fish
+FIRE   34 header: f-0
+
+        SELECTED WINES
+
+ WINE                  CERTAINTY
+ -------------------------------
+==> f-97    (phase print-wines)
+FIRE   35 print-wine: f-96,
+<== f-96    (attribute (name wine) (value Geverztraminer) (certainty 80.0))
+ Geverztraminer           80%
+FIRE   36 print-wine: f-95,
+<== f-95    (attribute (name wine) (value Riesling) (certainty 64.0))
+ Riesling                 64%
+FIRE   37 print-wine: f-92,
+<== f-92    (attribute (name wine) (value Chenin-Blanc) (certainty 40.0))
+ Chenin-Blanc             40%
+FIRE   38 end-spaces: f-0,
+
+
+
